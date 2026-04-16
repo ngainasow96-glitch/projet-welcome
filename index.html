@@ -1,0 +1,1367 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background: black;
+            padding-top: 73px;
+            opacity: 0.8;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+
+        }
+
+
+        header {
+            width: 100%;
+            background: #051C31;
+            position: fixed;
+            left: 0;
+            top: 0;
+            padding: 0;
+            z-index: 1;
+
+        }
+
+        .parti {
+            height: 80px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 1200px;
+            margin: 0 auto;
+        }
+
+        .logo {
+            background-image: url('image1.png');
+            background-size: cover;
+            width: 100px;
+            height: 100px;
+        }
+
+        .menu {
+            width: 400px;
+            height: 60px;
+        }
+
+        .nav {
+            list-style: none;
+            color: white;
+            display: flex;
+            justify-content: space-around;
+            font-size: 10px;
+            font-weight: bold;
+        }
+
+        .navv {
+            text-decoration: none;
+            color: white;
+        }
+
+        .s1 {
+            width: 100%;
+            height: 500px;
+            border: 2px solid black;
+            border-radius: 0 0 20px 20px;
+            overflow: hidden;
+
+        }
+
+        .slides {
+            display: flex;
+            width: 500%;
+            height: 100%;
+            animation: glissement 12s infinite;
+        }
+
+        .img1 {
+            width: 100%;
+            height: 100%;
+            background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('image0.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+
+        }
+
+        .img2 {
+            width: 100%;
+            height: 100%;
+            background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('image21.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+
+        }
+
+        .img3 {
+            width: 100%;
+            height: 100%;
+            background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('image22.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+
+        }
+
+        .img4 {
+            width: 100%;
+            height: 100%;
+            background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('image23.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+
+        .slides img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+
+        }
+
+        @keyframes glissement {
+            0% {
+                transform: translateX(0);
+            }
+
+
+            20% {
+                transform: translateX(0);
+            }
+
+
+            25% {
+                transform: translateX(-20%);
+            }
+
+
+            45% {
+                transform: translateX(-20%);
+            }
+
+
+            50% {
+                transform: translateX(-40%);
+            }
+
+            70% {
+                transform: translateX(-40%);
+            }
+
+
+            75% {
+                transform: translateX(-60%);
+            }
+
+            95% {
+                transform: translateX(-60%);
+            }
+
+
+            100% {
+                transform: translateX(-80%);
+            }
+
+
+        }
+
+        .a {
+            margin-top: 180px;
+            width: 500px;
+            height: 200px;
+            margin-left: auto;
+            margin-right: auto;
+            text-align: center;
+            color: white;
+            font-size: 15px;
+        }
+
+        .bouton {
+            color: white;
+            background: #03CCFE;
+            border-radius: 5px 0px 5px 0px;
+            border: #03CCFE;
+            padding: 5px;
+            width: 120px;
+            font-size: 15px;
+        }
+
+        .s2 {
+            height: 1240px;
+            margin-top: 25px;
+            border-radius: 20px 20px 20px 20px;
+            background: #051C31;
+            border: 2px solid #051C31;
+        }
+
+        .b {
+            width: 500px;
+            height: 150px;
+            margin: 0 auto;
+            margin-top: 30px;
+            color: white;
+            text-align: center;
+        }
+
+        .b1 {
+            width: 93%;
+            height: 1060px;
+            margin: 0 auto;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+            transition: transform 0.3s ease-in-out;
+            overflow: hidden;
+        }
+
+        .b1 :hover {
+            transform: scale(1.02);
+        }
+
+
+        .b2 {
+            width: 31%;
+            height: 500px;
+            background: white;
+            border: 5px solid #03CCFE;
+            border-radius: 8px 8px 8px 8px;
+            box-shadow: 1px 1px 1px 1px #03CCFE;
+
+        }
+
+        .b3 {
+            width: 150px;
+            height: 30px;
+            margin: 0 auto;
+            margin-top: 30px;
+            text-align: center;
+            font-size: 17px;
+            font-weight: bold;
+        }
+
+        .b4 {
+            width: 80%;
+            height: 260px;
+            margin: 0 auto;
+            margin-top: 20px;
+            border-radius: 15px 15px 15px 15px;
+            background-image: url('image2.jpg');
+            background-size: cover;
+
+
+        }
+
+
+        .b5 {
+            width: 80%;
+            height: 260px;
+            margin: 0 auto;
+            margin-top: 20px;
+            border-radius: 15px 15px 15px 15px;
+            background-image: url('image3.jpg');
+            background-size: cover;
+
+        }
+
+        .b6 {
+            width: 80%;
+            height: 260px;
+            margin: 0 auto;
+            margin-top: 20px;
+            border-radius: 15px 15px 15px 15px;
+            background-image: url('image4.jpg');
+            background-size: cover;
+
+        }
+
+        .b7 {
+            width: 80%;
+            height: 260px;
+            margin: 0 auto;
+            margin-top: 20px;
+            border-radius: 15px 15px 15px 15px;
+            background-image: url('image5.jpg');
+            background-size: cover;
+
+        }
+
+        .b8 {
+            width: 80%;
+            height: 260px;
+            margin: 0 auto;
+            margin-top: 20px;
+            border-radius: 15px 15px 15px 15px;
+            background-image: url('image6.jpg');
+            background-size: cover;
+
+        }
+
+        .b9 {
+            width: 80%;
+            height: 260px;
+            margin: 0 auto;
+            margin-top: 20px;
+            border-radius: 15px 15px 15px 15px;
+            background-image: url('image7.jpg');
+            background-size: cover;
+
+        }
+
+        .b44 {
+            width: 60%;
+            height: 80px;
+            margin: 0 auto;
+            margin-top: 30px;
+            text-align: center;
+            font-size: 13px;
+        }
+
+        .s3 {
+            height: 550px;
+            margin-top: 25px;
+            border-radius: 20px 20px 20px 20px;
+            background: #ffff;
+            border: 2px solid white;
+
+        }
+
+        .c {
+            width: 550px;
+            height: 150px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .c1 {
+            width: 93%;
+            height: 400px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+        }
+
+        .c2 {
+            width: 31%;
+            height: 320px;
+            background: white;
+            border: 5px solid #03CCFE;
+            border-radius: 8px 8px 8px 8px;
+            box-shadow: 1px 1px 1px 1px #03CCFE;
+        }
+
+        .c3 {
+            width: 320px;
+            height: 60px;
+
+            margin-top: 30px;
+            font-size: 17px;
+        }
+
+        .c4 {
+            width: 310px;
+            height: 120px;
+            margin-top: 30px;
+            font-size: 17px;
+            margin-left: 20px;
+        }
+
+        .s4 {
+            height: 1660px;
+            margin-top: 25px;
+            border-radius: 20px 20px 20px 20px;
+            background: #051C31;
+            border: 2px solid #051C31;
+        }
+
+        .d {
+            width: 93%;
+            height: 560px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            transition: transform 0.3s ease-in-out;
+            overflow: hidden;
+        }
+
+        .d :hover {
+            transform: scale(1.02);
+        }
+
+
+        .d1 {
+            width: 48%;
+            height: 560px;
+            border-radius: 5px;
+            background-image: url('image8.jpg');
+            background-size: cover;
+        }
+
+        .d2 {
+            width: 48%;
+            height: 560px;
+            border-radius: 5px;
+            background-image: url('image9.jpg');
+            background-size: cover;
+        }
+
+        .d3 {
+            width: 93%;
+            height: 160px;
+            margin: 0 auto;
+            margin-top: 10px;
+            display: flex;
+
+        }
+
+
+
+
+        .d4 {
+            width: 320px;
+            height: 165px;
+            color: white;
+            font-size: 13px;
+        }
+
+        .d5 {
+            width: 320px;
+            height: 150px;
+            margin-left: 280px;
+            color: white;
+            font-size: 13px;
+        }
+
+        .d6 {
+            width: 93%;
+            height: 560px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 12px;
+            transition: transform 0.3s ease-in-out;
+            overflow: hidden;
+        }
+
+        .d6 :hover {
+            transform: scale(1.02);
+        }
+
+        .d7 {
+            width: 48%;
+            height: 560px;
+            border-radius: 5px;
+            background-image: url('image10.jpg');
+            background-size: cover;
+        }
+
+        .d8 {
+            width: 48%;
+            height: 560px;
+            border-radius: 5px;
+            background-image: url('image11.jpg');
+            background-size: cover;
+            border: 2px solid #051C31;
+        }
+
+        .s5 {
+            height: 390px;
+            margin-top: 25px;
+            border-radius: 20px 20px 20px 20px;
+            background: white;
+            border: 2px solid white;
+        }
+
+        .e {
+            width: 93%;
+            height: 200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 12px;
+        }
+
+        .e1 {
+            width: 31%;
+            height: 160px;
+            background: white;
+            border: 5px solid #03CCFE;
+            border-radius: 8px 8px 8px 8px;
+            box-shadow: 1px 1px 1px 1px #03CCFE;
+            display: flex;
+        }
+
+        .e2 {
+            width: 30%;
+            height: 100px;
+            margin-top: 30px;
+            margin-left: 10px;
+            border-radius: 10px;
+            background-image: url('image12.jpg');
+            background-size: cover;
+        }
+
+        .e3 {
+            width: 55%;
+            height: 100px;
+            margin-top: 30px;
+            margin-left: 10px;
+            font-size: 11px;
+        }
+
+        .e4 {
+            width: 30%;
+            height: 100px;
+            margin-top: 30px;
+            margin-left: 10px;
+            border-radius: 10px;
+            background-image: url('image13.jpg');
+            background-size: cover;
+        }
+
+        .e5 {
+            width: 30%;
+            height: 100px;
+            margin-top: 30px;
+            margin-left: 10px;
+            border-radius: 10px;
+            background-image: url('image14.jpg');
+            background-size: cover;
+        }
+
+        .s6 {
+            height: 500px;
+            margin-top: 25px;
+            border-radius: 20px 20px 20px 20px;
+            background: #051C31;
+            border: 2px solid #051C31;
+        }
+
+        .f {
+            width: 93%;
+            height: 68%;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .ff {
+            width: 500px;
+            height: 90px;
+            margin: 0 auto;
+            margin-top: 30px;
+            color: white;
+            text-align: center;
+        }
+
+        .f1 {
+            color: white;
+            font-size: 15px;
+        }
+
+        .f2 {
+            width: 1152px;
+            height: 30px;
+            border-radius: 5px;
+        }
+
+        .f3 {
+            width: 1152px;
+            height: 50px;
+            border-radius: 5px;
+        }
+
+        .f4 {
+            width: 1155px;
+            height: 50px;
+            background: #03CCFE;
+            color: white;
+            border-radius: 5px;
+            border: 2px solid #03CCFE;
+        }
+
+        .s7 {
+            height: 200px;
+            margin-top: 25px;
+            border-radius: 20px 20px 20px 20px;
+            background: white;
+            border: 2px solid white
+        }
+
+        .g {
+            width: 93%;
+            height: 80px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .gg {
+            width: 550px;
+            height: 90px;
+            margin: 0 auto;
+            text-align: center;
+
+
+        }
+
+        .g1 {
+            width: 25%;
+            height: 50px;
+
+        }
+
+        .s8 {
+            height: 70px;
+            margin-top: 25px;
+            background: #03CCFE;
+        }
+
+        .h {
+            width: 93%;
+            height: 70px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 10px;
+        }
+
+        .h1 {
+            width: 46%;
+            height: 40px;
+        }
+
+        .h2 {
+            width: 15%;
+            height: 40px;
+        }
+
+        .fa-brands {
+            font-size: 30px;
+            color: black;
+        }
+
+        .fa-solid {
+            font-size: 30px;
+
+        }
+
+        .li {
+            text-decoration: none;
+            color: white;
+        }
+
+        .lo {
+            text-decoration: none;
+            color: black;
+        }
+        /* cacher checkbox */
+#toggle-menu {
+    display: none;
+}
+
+/* burger caché par défaut */
+.burger {
+    display: none;
+    font-size: 25px;
+    color: white;
+    cursor: pointer;
+}
+
+/* ===== TABLETTE ===== */
+@media (max-width: 768px) {
+
+    .parti {
+        width: 90%;
+    }
+
+    /* afficher burger */
+    .burger {
+        display: block;
+    }
+
+    /* menu caché */
+    .menu {
+        position: absolute;
+        top: 80px;
+        left: 0;
+        width: 100%;
+        background: #051C31;
+        display: none;
+    }
+     .s2 {
+            width: 100%;
+            height:auto;
+            margin-top: 25px;
+            border-radius: 20px 20px 20px 20px;
+            background: #051C31;
+            border: 2px solid #051C31;
+        }
+        .b1{
+            
+            flex-wrap: wrap;
+            height: 100%;
+            width: 100%;
+        }
+         .s3 {
+            width: 100%;
+            height:100%;
+            margin-top: 25px;
+            border-radius: 20px 20px 20px 20px;
+            background: #051C31;
+            border: 2px solid #051C31;
+        }
+        .c1{
+            grid-template-columns: repeat(2.2fr);
+            height: 100%;
+            width: 100%;
+        }
+        .c{
+            color: white;
+        .s4 {
+        height: auto;
+        padding: 20px 0;
+    }
+
+    .d,
+    .d6 {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .d1,
+    .d2,
+    .d7,
+    .d8 {
+        width: 100%;
+        height: 250px;
+    }
+
+    .d3 {
+        flex-direction: column;
+        height: auto;
+        gap: 15px;
+        text-align: center;
+    }
+
+    .d4,
+    .d5 {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .d5 {
+        margin-left: 0; /* IMPORTANT */
+    }
+
+        }
+        .s5 {
+            width: 100%;
+            height:100%;   
+            height: 390px;
+            margin-top: 25px;
+            border-radius: 20px 20px 20px 20px;
+            background: white;
+            border: 2px solid white;
+        }
+        
+        .e{
+            width: 100%;
+            height: 100%;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 12px;
+            grid-template-columns: repeat(2.2fr);
+        }
+        .e1 {
+            width: 95%;
+            height: 95%;
+            background: white;
+            border: 5px solid #03CCFE;
+            border-radius: 8px 8px 8px 8px;
+            box-shadow: 1px 1px 1px 1px #03CCFE;
+            display: flex;
+        }
+
+    /* quand checkbox activée */
+    #toggle-menu:checked ~ .menu {
+        display: block;
+    }
+
+    .nav {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+        padding: 20px 0;
+    }
+
+    /* colonnes -> vertical */
+    .b1,
+    .c1,
+    .d,
+    .d6,
+    .e,
+    .f {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .b2,
+    .c2,
+    .e1 {
+        width: 100%;
+    }
+
+    .d1,
+    .d2,
+    .d7,
+    .d8 {
+        width: 100%;
+    }
+
+    .d5 {
+        margin-left: 0;
+    }
+
+    .f2,
+    .f3,
+    .f4 {
+        width: 100%;
+    }
+}
+
+/* ===== MOBILE ===== */
+@media (max-width: 414px) {
+
+    body {
+        padding-top: 60px;
+    }
+
+    .logo {
+        width: 70px;
+        height: 70px;
+    }
+
+    .a {
+        width: 90%;
+        font-size: 13px;
+    }
+    
+         .s2 {
+            width: 100%;
+            height:100%;
+            margin-top: 25px;
+            border-radius: 20px 20px 20px 20px;
+            background: #051C31;
+            border: 2px solid #051C31;
+        }
+        .b1{
+            grid-template-columns: repeat(1.1fr);
+            height: 100%;
+            width: 100%;
+        }
+         .s3 {
+            width: 100%;
+            height:100%;
+            margin-top: 25px;
+            border-radius: 20px 20px 20px 20px;
+            background: #051C31;
+            border: 2px solid #051C31;
+        }
+        .c1{
+            grid-template-columns: repeat(1.1fr);
+            height: 100%;
+            width: 100%;
+        }
+        .c{
+            color: white;
+        }
+          .s4 {
+            width: 100%;
+            height:100%;
+            margin-top: 25px;
+            border-radius: 20px 20px 20px 20px;
+            background: #051C31;
+            border: 2px solid #051C31;
+        }
+        .d{
+            grid-template-columns: repeat(1.1fr);
+            height: 100%;
+            width: 100%;
+        }
+        .s5 {
+            width: 100%;
+            height:100%;   
+            height: 390px;
+            margin-top: 25px;
+            border-radius: 20px 20px 20px 20px;
+            background: white;
+            border: 2px solid white;
+        }
+        
+        .e{
+            width: 100%;
+            height: 100%;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 12px;
+            grid-template-columns: repeat(1.1fr);
+        }
+       
+        
+    
+
+    .b,
+    .c,
+    .ff,
+    .gg {
+        width: 90%;
+    }
+
+    h2 {
+        font-size: 18px;
+    }
+
+    p {
+        font-size: 13px;
+    }
+
+    .b3 {
+        font-size: 14px;
+    }
+
+    .b44 {
+        font-size: 12px;
+    }
+
+    .c3,
+    .c4 {
+        font-size: 13px;
+    }
+
+    .g {
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+    }
+
+    .h {
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+    }
+
+    .h2 {
+        width: 100%;
+    }
+}
+    </style>
+</head>
+
+<body>
+    <!-- Partie menu -->
+    <header>
+        <div class="parti">
+            <div class="logo"></div>
+             <input type="checkbox" id="toggle-menu">
+        <label for="toggle-menu" class="burger">
+            <i class="fa-solid fa-bars"></i>
+        </label>
+            <div class="menu">
+                <ul class="nav">
+                    <a href="#Accueil" class="navv">
+                        <li>Accueil</li>
+                    </a>
+                    <a href="#Programmes" class="navv">
+                        <li>Programmes</li>
+                    </a>
+                    <a href="#Tarifs" class="navv">
+                        <li>Tarifs</li>
+                    </a>
+                    <a href="#Coachs" class="navv">
+                        <li>Coachs</li>
+                    </a>
+                    <a href="#Inscription" class="navv">
+                        <li>Inscription</li>
+                    </a>
+                    <a href="#Contact" class="navv">
+                        <li>Contact</li>
+                    </a>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <!-- section1 -->
+    <section class="s1" id="Accueil">
+        <div class="slides">
+            <div class="img1">
+                <div class="a">
+                    <h2>SUNUGAL SPORT 221</h2>
+                    <p>Révélez le meilleur de vous-même dans un espace conçu pour vos objectifs.
+                        Que vous souhaitiez sculpter votre silhouette, évacuer le stress de la
+                        journée ou repousser vos limites physiques, notre salle vous offre un
+                        cadre motivant et des équipements de pointe. Ici, pas de jugement,
+                        seulement du progrès</p>
+                    <a href="#Voir plus" id="s7"><button class="bouton">Voir plus</button></a>
+                </div>
+            </div>
+            <div class="img2">
+                <div class="a">
+                    <h2>Bienvenue</h2>
+                    <p>Chaque mouvement, même le plus petit, contribue à votre progression globale. Chaque fois que
+                        vous choisissez de vous entraîner, vous vous rapprochez de votre objectif. C'est l'une de nos
+                        citations préférées pour la salle de sport.</p>
+                    <a href="#Programmes" id="s2"><button class="bouton">Programmes</button></a>
+                </div>
+            </div>
+            <div class="img3">
+                <div class="a">
+                    <h2>Votre corps,notre priorité</h2>
+                    <p>Le premier pas est souvent le plus difficile, mais c’est celui qui change tout pour votre santé.
+                        Rejoignez-nous dès aujourd'hui pour transformer vos intentions en actions concrètes et durables.
+                    </p>
+                    <a href="#Tarifs" id="s3"><button class="bouton">Tarifs</button></a>
+                </div>
+            </div>
+            <div class="img4">
+                <div class="a">
+                    <h2>Mouvement des Entraîneurs</h2>
+                    <p>Chaque séance d'entraînement est un investissement précieux pour votre bien-être physique et
+                        mental. Ne laissez plus vos excuses décider de votre avenir, car vous méritez de vous sentir
+                        fort et fier de vous.</p>
+                    <a href="#Coachs" id="s4"><button class="bouton">Coachs</button></a>
+                </div>
+            </div>
+            <div class="img1">
+                <div class="a">
+                    <h2>SUNUGAL SPORT 221</h2>
+                    <p>Révélez le meilleur de vous-même dans un espace conçu pour vos objectifs.
+                        Que vous souhaitiez sculpter votre silhouette, évacuer le stress de la
+                        journée ou repousser vos limites physiques, notre salle vous offre un
+                        cadre motivant et des équipements de pointe. Ici, pas de jugement,
+                        seulement du progrès</p>
+                    <a href="#Voir plus" id="s7"><button class="bouton">Voir plus</button></a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- section2 -->
+    <section>
+        <div class="s2" id="Programmes">
+            <div class="b">
+                <h2>Nos programmes</h2>
+                <p>De la puissance de la musculation à l'énergie des cours collectifs,
+                    Sunugal Sport 221vous propose une palette d'activités variées
+                    pour sculpter votre corps et libérer votre esprit.</p>
+            </div>
+            <div class="b1">
+                <div class="b2">
+                    <div class="b3">Musculation</div>
+                    <a href="programme.html">
+                        <div class="b4"></div>
+                    </a>
+                    <div class="b44">
+                        Forgez un corps puissant et dessiné grâce à notre
+                        plateau de musculation équipé des meilleures
+                        machines de dernière génération.
+                    </div>
+                </div>
+                <div class="b2">
+                    <div class="b3">Fitness</div>
+                    <div class="b5"></div>
+                    <div class="b44">
+                        Retrouvez une énergie débordante et affinez
+                        votre silhouette grâce à nos programmes de
+                        fitness cardio et de renforcement tonique.
+                    </div>
+                </div>
+                <div class="b2">
+                    <div class="b3">Yoga</div>
+                    <div class="b6"></div>
+                    <div class="b44">
+                        Grâce à nos séances de Yoga conçues
+                        pour libérer les tensions et
+                        renforcer votre souplesse.
+                    </div>
+                </div>
+                <div class="b2">
+                    <div class="b3"> Boxe</div>
+                    <div class="b7"></div>
+                    <div class="b44">
+                        Libérez votre énergie et forgez un mental
+                        d'acier grâce à nos entraînements de boxe
+                        alliant technique, cardio et dépassement de soi.
+                    </div>
+                </div>
+                <div class="b2">
+                    <div class="b3">CrossFit</div>
+                    <div class="b8"></div>
+                    <div class="b44">
+                        Forgez un corps athlétique
+                        et un mental d’acier à chaque
+                        entraînement chez
+                        Sunugal Sport 221
+                    </div>
+                </div>
+                <div class="b2">
+                    <div class="b3">Cardio-Training</div>
+                    <div class="b9"></div>
+                    <div class="b44">
+                        Brûlez un maximum de calories en un minimum
+                        de temps avec nos zones de cardio-training
+                        et nos sessions de HIIT à haute intensité.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- section3 -->
+    <section>
+        <div class="s3" id="Tarifs">
+            <div class="c">
+                <h2>Tarifs de notre salle</h2>
+                <p>Choisissez la formule qui vous ressemble et rejoignez
+                    l'élite de Sunugal Sport 221 dès aujourd'hui.
+                    Que vous recherchiez la liberté d'un abonnement mensuel
+                    ou l'engagement d'un pack annuel, nos tarifs sont conçus
+                    pour vous offrir le meilleur du sport au meilleur prix.</p>
+            </div>
+            <div class="c1">
+                <div class="c2">
+                    <div class="b3">Durée Mensuel</div>
+                    <div class="c3">
+                        <ul>
+                            <li>Pass Découverte</li>
+                            <li>Accès illimité au plateau + 1 bilan offert</li>
+                            <li>25 000 FCFA/ mois</li>
+                        </ul>
+                    </div>
+                    <Div class="c4">
+                        C'est la formule idéale pourtester l'ambiance
+                        de la salle et démarrer sans pression, vous
+                        offrant une flexibilité totale sans engagement à long terme.
+
+                    </Div>
+                </div>
+                <div class="c2">
+                    <div class="b3">Durée Trimestriel</div>
+                    <div class="c3">
+                        <ul>
+                            <li>Pack Performance</li>
+                            <li>Accès illimité + Cours collectifs inclus</li>
+                            <li>65 000 FCFA(Éco: 10 000)</li>
+                        </ul>
+                    </div>
+                    <Div class="c4">
+                        Trois mois, c'est le temps nécessaire pour ancrer une habitude
+                        et voir les premiers vrais changements physiques,
+                        tout en bénéficiant d'un tarif plus avantageux que le mensuel.
+                    </Div>
+                </div>
+                <div class="c2">
+                    <div class="b3">Durée Annuel</div>
+                    <div class="c3">
+                        <ul>
+                            <li>Club Élite</li>
+                            <li>Accès total + Coaching personnalisé + 1 mois offert</li>
+                            <li>220 000 FCFA(Le meilleur prix)</li>
+                        </ul>
+                    </div>
+                    <Div class="c4">
+                        C'est le choix de la rentabilité et du résultat,
+                        vous garantissant le prix le plus bas à la séance
+                        pour transformer durablement votre style de vie
+                        et atteindre vos objectifs les plus ambitieux.
+                    </Div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- section4 -->
+    <section>
+        <div class="s4" id="Coachs">
+            <div class="b">
+                <h2>Profils de nos coachs</h2>
+                <p>ÀSunugal Sport 221, vous n'êtes jamais
+                    seul face à vos défis. Nos coachs
+                    certifiés sont des experts passionnés,
+                    dédiés à transformer votre potentiel
+                    en résultats concrets grâce à un
+                    accompagnement technique et
+                    mental de chaque instant.</p>
+            </div>
+            <div class="d">
+                <div class="d1"></div>
+                <div class="d2"></div>
+            </div>
+            <div class="d3">
+                <div class="d4">
+                    <p><strong>Moussa Diop – Expert Musculation & Force</strong><br><br>
+                        <strong>Spécialité </strong>:Prise de masse et force athlétique.<br><br>
+                        <strong>Bio</strong> :Ancien compétiteur de haut niveau, Moussa
+                        combine rigueur technique et motivation d'acier.
+                        Son objectif ? Vous aider à sculpter un physique
+                        puissant tout en maîtrisant parfaitement chaque mouvement.
+
+                    </p>
+                </div>
+                <div class="d5">
+                    <p><strong>Aminata Fall – Coach Fitness & Perte de Poids</strong><br><br>
+                        <strong>Spécialité </strong>:Cardio-training et Tonification.<br><br>
+                        <strong>Bio</strong> :Spécialiste de la transformation rapide, Aminata est connue pour ses
+                        séances explosives et son énergie débordante. Elle saura vous redonner confiance en vous et
+                        transformer vos efforts en résultats visibles.
+
+                    </p>
+                </div>
+            </div>
+            <div class="d6">
+                <div class="d7"></div>
+                <div class="d8"></div>
+            </div>
+            <div class="d3">
+                <div class="d4">
+                    <p><strong>Julie Moreau – Maître Yoga & Mobilité</strong><br><br>
+                        <strong>Spécialité </strong>:Yoga et Étirements posturaux.<br><br>
+                        <strong>Bio</strong> :Adepte de l'approche "corps-esprit",
+                        Julien vous accompagne pour libérer vos tensions et gagner
+                        en souplesse. Ses séances sont une bulle de sérénité indispensable
+                        pour équilibrer vos entraînements intensifs.
+                    </p>
+                </div>
+                <div class="d5">
+                    <a href="coach.html" class="li">
+                        <p><strong>Aliou Sy – Coach Boxe & Mental</strong><br><br>
+                            <strong>Spécialité </strong>:Cardio-Boxe et Préparation mentale.<br><br>
+                            <strong>Bio</strong> :Passionné par les sports de combat, Aliou vous
+                            apprend à canaliser votre énergie et à forger un mental de guerrier.
+                            Avec lui, vous brûlez des calories tout en apprenant à vous dépasser, coup après coup.
+                        </p>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- section5 -->
+    <section>
+        <div class="s5">
+            <div class="c">
+                <h2>Quelques témognages de nos membres</h2>
+                <p>Dans une salle commeSunugal Sport 221,
+                    les témoignages de membres servent de véritable moteur de
+                    motivation pour la communauté locale.
+                    Bien que les avis spécifiques varient selon les objectifs de
+                    chacun</p>
+            </div>
+            <div class="e">
+                <div class="e1">
+                    <Div class="e2"></Div>
+                    <div class="e3">
+                        <P><strong>Awa Diop,Membre fidèle</strong><br><br>
+                            J'appréhende toujours le sport, mais l'équipe de
+                            Sunugal Sport 221sait comment nous mettre à l'aise.
+                            Les coachs sont super attentifs.
+                        </P>
+                    </div>
+                </div>
+                <div class="e1">
+                    <Div class="e4"></Div>
+                    <div class="e3">
+                        <P><strong>Ousmane Tall,Passionné de fonte</strong><br><br>
+                            Pour un pratiquant régulier comme moi, la qualité des machines
+                            est primordiale. Ici, le plateau de musculation est
+                            complet et l'entretien est impeccable.
+                        </P>
+                    </div>
+                </div>
+                <div class="e1">
+                    <Div class="e5"></Div>
+                    <div class="e3">
+                        <P><strong>Fatou Sow,Habituée du cardio</strong><br><br>
+                            L'ambiance dans les cours collectifs est tout simplement
+                            incroyable ! On ressent une vraie cohésion entre les membres.
+                        </P>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- section6 -->
+    <section>
+        <div class="s6" id="Inscription">
+            <div class="ff">
+                <h2>Formulaire d’inscription SUNUGAL 221</h2>
+                <p>Inscrivez-vous pour une séance d'essai gratuite.</p>
+            </div>
+            <div class="f">
+                <form action="">
+                    <label for="" class="f1">Nom et Prenom</label><br><br>
+                    <input type="text" class="f2"><br><br>
+                    <label for="" class="f1">Objectis sportifs</label><br><br>
+                    <select name="Objectif" id="" class="f2">
+                        <option value="perte-poids">Perte de poids</option>
+                        <option value="musculation">Musculation / Prise de masse</option>
+                        <option value="remise-en-forme">Remise en forme générale</option>
+                        <option value="cardio">Cardio & Endurance</option>
+                    </select><br><br>
+                    <label for="" class="f1">Message (Optinnel)</label><br><br>
+                    <textarea name="" id="" class="f3"></textarea><br><br>
+                    <button type="submit" class="f4">Inscrire maintenant</button>
+                </form>
+            </div>
+        </div>
+    </section>
+    <!-- section7 -->
+    <section>
+        <div class="s7" id="Contact">
+            <div class="gg">
+                <h2>Contact</h2>
+                <p>Contactez-nous pour plus d’information</p>
+            </div>
+            <div class="g">
+                <div class="g1"><i class="fa-solid fa-phone-volume"></i>
+                    77 456 78 90</div>
+                <div class="g1"><a href="https://www.google.com/maps" class="lo"><i
+                            class="fa-solid fa-location-dot"></i></a>
+                    Dieupeul</div>
+                <div class="g1"><i class="fa-solid fa-envelope"></i>
+                    sunugal12@gmail.com</div>
+            </div>
+        </div>
+    </section>
+    <!-- footer -->
+    <section>
+        <div class="s8">
+            <div class="h">
+                <div class="h1">©2026sunugal sport 221-tous droits réservés</div>
+                <div class="h2">
+                    <a href="https://www.facebook.com/"><i class="fa-brands fa-square-facebook" h3></i></a>
+                    <a href="https://x.com/"><i class="fa-brands fa-square-x-twitter"></i></a>
+                    <a href="https://www.instagram.com/"><i class="fa-brands fa-square-instagram"></i></a>
+                    <a href="https://lindin.com/"> <i class="fa-brands fa-linkedin-in"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>

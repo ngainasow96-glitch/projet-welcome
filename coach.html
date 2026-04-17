@@ -1,12 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-         body {
+        body {
             background: #051C31;
             padding-top: 73px;
             opacity: 80px;
@@ -19,6 +22,7 @@
             left: 0;
             top: 0;
             padding: 0;
+            z-index: 1;
         }
 
         .parti {
@@ -50,11 +54,13 @@
             font-size: 12px;
             font-weight: bold;
         }
-        .navv{
+
+        .navv {
             text-decoration: none;
             color: white;
         }
-        .s1{
+
+        .s1 {
             width: 65%;
             height: 800px;
             border: 2px solid #051C31;
@@ -63,7 +69,8 @@
             background-size: cover;
             background-position: center;
         }
-        .a{
+
+        .a {
             width: 350px;
             height: 70px;
             border: white 2px solid;
@@ -73,156 +80,457 @@
             opacity: 82%;
             border-radius: 12px;
         }
-        .s2{
+
+        .s2 {
             width: 93%;
             height: 1170px;
             border: 2px solid #051C31;
             margin: 0 auto;
             margin-top: 25px;
         }
-        .b{
+
+        .b {
             color: white;
             font-size: 20px;
-            
+
         }
-        .b1{
+
+        .b1 {
             height: 110px;
-           display: flex;
-           justify-content: space-between;
-           align-items: center;
-          
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
         }
-        .b2{
+
+        .b2 {
             width: 24%;
             height: 80px;
             border: 2px solid #03CCFE;
-             background: white;
-             border-radius: 5px;
-             text-align: center;
-             font-size: 25px;
-             box-shadow: 1px 1px 1px 1px #03CCFE;
+            background: white;
+            border-radius: 5px;
+            text-align: center;
+            font-size: 25px;
+            box-shadow: 1px 1px 1px 1px #03CCFE;
         }
-        .b3{
+
+        .b3 {
             margin-top: 30px;
         }
-        .b4{
+
+        .b4 {
             height: 160px;
             border: 2px solid white;
             background: white;
-             border: 2px solid #03CCFE;
-              border-radius: 5px;
-              color: black;
-              font-size: 22px;
-              box-shadow: 1px 1px 1px 1px #03CCFE;
+            border: 2px solid #03CCFE;
+            border-radius: 5px;
+            color: black;
+            font-size: 22px;
+            box-shadow: 1px 1px 1px 1px #03CCFE;
         }
-        .b5{
-             height: 120px;
-           display: flex;
-           justify-content: space-between;
-           align-items: center;
+
+        .b5 {
+            height: 120px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
         }
-        .b6{
+
+        .b6 {
             width: 24%;
             height: 90px;
             border: 2px solid #03CCFE;
-             background: white;
-             border-radius: 5px;
-             text-align: center;
-             font-size: 25px;
-             box-shadow: 1px 1px 1px 1px #03CCFE;
+            background: white;
+            border-radius: 5px;
+            text-align: center;
+            font-size: 25px;
+            box-shadow: 1px 1px 1px 1px #03CCFE;
         }
-        .b7{
-             width: 45%;
+
+        .b7 {
+            width: 45%;
             height: 120px;
             border: 2px solid #03CCFE;
-             background: white;
-             border-radius: 5px;
-             text-align: center;
-             font-size: 25px;
-             box-shadow: 1px 1px 1px 1px #03CCFE;
+            background: white;
+            border-radius: 5px;
+            text-align: center;
+            font-size: 25px;
+            box-shadow: 1px 1px 1px 1px #03CCFE;
         }
-        .b8{
-             height: 120px;
-             border: 2px solid white;
-             background: white;
-             margin-top: 50px;
-             opacity: 30%;
-             
+
+        .b8 {
+            height: 120px;
+            border: 2px solid white;
+            background: white;
+            margin-top: 50px;
+            opacity: 30%;
+
         }
-        .b9{
+
+        .b9 {
             margin-top: 40px;
             text-align: center;
             font-size: 20px;
             font-weight: bold;
         }
+
+        /* BURGER */
+        .burger {
+            display: none;
+            font-size: 25px;
+            color: white;
+            cursor: pointer;
+            margin-left: 200px;
+        }
+
+        #menu-toggle {
+            display: none;
+        }
+
+        /* MOBILE */
+        @media screen and (max-width: 414px) {
+
+            .parti {
+                width: 100%;
+                padding: 0 15px;
+
+            }
+
+            .burger {
+                display: block;
+            }
+
+            .menu {
+                width: 100%;
+            }
+
+            .nav {
+                flex-direction: column;
+                align-items: center;
+                background: #051C31;
+                position: absolute;
+                top: 80px;
+                left: 0;
+                width: 100%;
+                display: none;
+            }
+
+            /* MAGIC CSS */
+            #menu-toggle:checked+.burger+.menu .nav {
+                display: flex;
+            }
+
+            .nav li {
+                padding: 15px 0;
+            }
+
+            .s1 {
+                width: 80%;
+                height: 400px;
+            }
+
+            .a {
+                width: 85%;
+                margin: 0 auto;
+                margin-top: 325px;
+                font-size: 12px;
+            }
+
+            .s2 {
+                width: 100%;
+                height: 100%;
+                border: 2px solid #051C31;
+                margin: 0 auto;
+                margin-top: 25px;
+            }
+
+            .b {
+                color: white;
+                font-size: 15px;
+
+            }
+
+            .b1 {
+                width: 100%;
+                height: 210px;
+                flex-direction: column;
+
+                align-items: center;
+                gap: 20PX;
+
+            }
+
+            .b2 {
+                width: 80%;
+                height: 55px;
+                border: 2px solid #03CCFE;
+                background: white;
+                border-radius: 5px;
+                text-align: center;
+                font-size: 15px;
+                box-shadow: 1px 1px 1px 1px #03CCFE;
+            }
+
+            .b3 {
+                margin-top: 30px;
+            }
+
+            .b4 {
+                width: 90%;
+                height: 160px;
+                border: 2px solid white;
+                background: white;
+                border: 2px solid #03CCFE;
+                border-radius: 5px;
+                color: black;
+                font-size: 15px;
+                box-shadow: 1px 1px 1px 1px #03CCFE;
+                margin-top: 0px;
+
+
+            }
+
+            .b5 {
+                height: 11%;
+                align-items: center;
+                flex-direction: column;
+                margin-top: 30px;
+                gap: 10PX;
+            }
+
+            .b6 {
+                width: 80%;
+                height: 100px;
+                border: 2px solid #03CCFE;
+                background: white;
+                border-radius: 5px;
+                text-align: center;
+                font-size: 15px;
+                box-shadow: 1px 1px 1px 1px #03CCFE;
+            }
+
+            .b7 {
+                width: 90%;
+                height: 120px;
+                border: 2px solid #03CCFE;
+                background: white;
+                border-radius: 5px;
+                text-align: center;
+                font-size: 17px;
+                box-shadow: 1px 1px 1px 1px #03CCFE;
+                margin-top: 10px;
+            }
+
+            .b8 {
+                height: auto;
+                border: 2px solid white;
+                background: white;
+                margin-top: 60px;
+                opacity: 30%;
+                width: 95%;
+
+            }
+
+            .b9 {
+                margin-top: 30px;
+                text-align: center;
+                font-size: 15px;
+                font-weight: bold;
+            }
+           
+         .h2 {
+            width: 15%;
+            height: 40px;
+        }
+         .fa-solid {
+            font-size: 10px;
+
+        }
+         .h {
+            width: 93%;
+            height: 100%;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 10px;
+        }
+          .fa-brands {
+            color: black;
+        }
+         .s8 {
+            height: 350px;
+            margin-top: 25px;
+            background: #03CCFE;
+        }
+
+
+        }
+
+        .h {
+            width: 93%;
+            height: 70px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 10px;
+        }
+
+        .h1 {
+            width: 46%;
+            height: 40px;
+            font-size: 8px;
+        }
+
+        .h2 {
+            width: 15%;
+            height: 40px;
+        }
+
+        .fa-brands {
+            font-size: 30px;
+            color: black;
+        }
+
+        .fa-solid {
+            font-size: 30px;
+
+        }
+
+        .li {
+            text-decoration: none;
+            color: white;
+        }
+
+        .lo {
+            text-decoration: none;
+            color: black;
+        }
+         .s8 {
+            height: 70px;
+            margin-top: 25px;
+            background: #03CCFE;
+        }
+
     </style>
 </head>
+
 <body>
-     <header>
+    <header>
         <div class="parti">
-           <a href="index.html"> <div class="logo"></div></a>
+            <a href="index.html">
+                <div class="logo"></div>
+            </a>
+            <input type="checkbox" id="menu-toggle">
+            <label for="menu-toggle" class="burger">
+                <i class="fa-solid fa-bars"></i>
+            </label>
             <div class="menu">
+
                 <ul class="nav">
-                    <a href="#index.html"><a href="index.html" class="navv"><li>Accueil</li></a></a>
-                    <a href="#Programmes" class="navv"><li>Programmes</li></a>
-                    <a href="#Tarifs" class="navv"><li>Tarifs</li></a>
-                    <a href="#Coachs" class="navv"><li>Coachs</li></a>
-                    <a href="#Inscription" class="navv"><li>Inscription</li></a>
-                    <a href="#Contact" class="navv"><li>Contact</li></a>
+                    <a href="#index.html"><a href="index.html" class="navv">
+                            <li>Accueil</li>
+                        </a></a>
+                    <a href="#Programmes" class="navv">
+                        <li>Programmes</li>
+                    </a>
+                    <a href="#Tarifs" class="navv">
+                        <li>Tarifs</li>
+                    </a>
+                    <a href="#Coachs" class="navv">
+                        <li>Coachs</li>
+                    </a>
+                    <a href="#Inscription" class="navv">
+                        <li>Inscription</li>
+                    </a>
+                    <a href="#Contact" class="navv">
+                        <li>Contact</li>
+                    </a>
                 </ul>
             </div>
         </div>
     </header>
     <!-- section -->
-     <section>
+    <section>
         <div class="s1">
             <Div class="a">
                 <h2> Aliou Sy – Coach Boxe & Mental</h2>
             </Div>
         </div>
-     </section>
-     <!-- section2 -->
-      <section>
+    </section>
+    <!-- section2 -->
+    <section>
         <div class="s2">
-           <p class="b"><strong>Spécialité :</strong>Cardio-Boxe et Préparation mentale.</p>
-           <div class="b1">
-            <div class="b2"><p class="b3">Defence</p></div>
-            <div class="b2"><p class="b3">Endurance</p></div>
-            <div class="b2"><p class="b3">Prépaphysique</p></div>
-           </div>
-           <p class="b"><strong>A propos: </strong></p>
-           <div class="b4">
-            <p><strong>Bio :</strong>
-            Passionné par les sports de combat,  Aliou vous apprend <br> à canaliser votre énergie 
-            et à forger un mental de guerrier. <br>Avec lui, vous brûlez des calories tout en apprenant 
-            à vous dépasser, coup après coup.
-            </p>
-           </div>
+            <p class="b"><strong>Spécialité :</strong>Cardio-Boxe et Préparation mentale.</p>
+            <div class="b1">
+                <div class="b2">
+                    <p class="b3">Defence</p>
+                </div>
+                <div class="b2">
+                    <p class="b3">Endurance</p>
+                </div>
+                <div class="b2">
+                    <p class="b3">Prépaphysique</p>
+                </div>
+            </div>
+            <p class="b"><strong>A propos: </strong></p>
+            <div class="b4">
+                <p><strong>Bio :</strong>
+                    Passionné par les sports de combat, Aliou vous apprend <br> à canaliser votre énergie
+                    et à forger un mental de guerrier. <br>Avec lui, vous brûlez des calories tout en apprenant
+                    à vous dépasser, coup après coup.
+                </p>
+            </div>
             <p class="b"><strong>Statistiques </strong></p>
             <div class="b5">
-                <div class="b6"><p class="b3">Experience <br><strong>8ans</strong></p></div>
-                <div class="b6"><p class="b3">Clients<br><strong>500</strong></p></div>
-                <div class="b6"><p class="b3">Note<br><strong>4.5/5</strong></p></div>
+                <div class="b6">
+                    <p class="b3">Experience <br><strong>8ans</strong></p>
+                </div>
+                <div class="b6">
+                    <p class="b3">Clients<br><strong>500</strong></p>
+                </div>
+                <div class="b6">
+                    <p class="b3">Note<br><strong>4.5/5</strong></p>
+                </div>
             </div>
             <p class="b"><strong>Certifications</strong></p>
             <div class="b4">
-            <p>
-          Expert de la performance sportive et figure reconnue au sein de l’écosystème <br>
-          Sport221, Aliou Sy incarne l'excellence du coaching certifié au Sénégal. <br>
-           Fort d’un parcours rigoureux et de certifications validées par les instances <br>
-            de référence, il met son savoir-faire au service des athlètes et des passionnés en quête de dépassement.
-            </p>
-           </div>
-            <p class="b"><strong>Forfait du coaching</strong></p>
-             <div class="b5">
-                <div class="b7"><p class="b3">Séance unique <br><strong>50 000  CFA</strong></p></div>
-                <div class="b7"><p class="b3">Forfait de 10 séances<br><strong>Forfait de 10séance</strong></p></div> 
+                <p>
+                    Expert de la performance sportive et figure reconnue au sein de l’écosystème <br>
+                    Sport221, Aliou Sy incarne l'excellence du coaching certifié au Sénégal. <br>
+                    Fort d’un parcours rigoureux et de certifications validées par les instances <br>
+                    de référence, il met son savoir-faire au service des athlètes et des passionnés en quête de
+                    dépassement.
+                </p>
             </div>
-             <div class="b8">
-                <p class="b9">Questions ? Contactez Aliou <br>
-               <i class="fa-solid fa-phone" ></i>+221 77 123 4567  aliousun@gmail.com</p>
+            <p class="b"><strong>Forfait du coaching</strong></p>
+            <div class="b5">
+                <div class="b7">
+                    <p class="b3">Séance unique <br><strong>50 000 CFA</strong></p>
                 </div>
+                <div class="b7">
+                    <p class="b3">Forfait de 10 séances<br><strong>Forfait de 10séance</strong></p>
+                </div>
+            </div>
+            <div class="b8">
+                <p class="b9">Questions ? Contactez Aliou <br>
+                    <i class="fa-solid fa-phone"></i>+221 77 123 4567 aliousun@gmail.com
+                </p>
+            </div>
         </div>
-      </section>
+    </section>
+    <div class="s8">
+        <div class="h">
+            <div class="h1">©2026sunugal sport 221-tous droits réservés</div>
+            <div class="h2">
+                <a href="https://www.facebook.com/"><i class="fa-brands fa-square-facebook" h3></i></a>
+                <a href="https://x.com/"><i class="fa-brands fa-square-x-twitter"></i></a>
+                <a href="https://www.instagram.com/"><i class="fa-brands fa-square-instagram"></i></a>
+                <a href="https://lindin.com/"> <i class="fa-brands fa-linkedin-in"></i></a>
+            </div>
+        </div>
+    </div>
 </body>
+
 </html>
